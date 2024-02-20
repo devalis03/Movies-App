@@ -1,0 +1,37 @@
+.logo {
+  display: flex;
+}
+
+.logo p {
+  color: whitesmoke;
+}
+
+.link-nav {
+  text-decoration: none;
+}
+
+.nav-links {
+  -ms-flex-align: end;
+}
+
+.nav-item {
+  color: white !important;
+  margin-right: 10px;
+}
+
+.nav-item:hover {
+  color: blueviolet !important;
+}
+
+.nav-button {
+  margin-left: 8px;
+  background-color: blueviolet;
+  border: 1px solid black;
+  border-radius: 27%;
+}
+
+.nav-button:hover {
+  color: white !important;
+  transform: scale(1.1);
+  transition: 0.7s;
+}
