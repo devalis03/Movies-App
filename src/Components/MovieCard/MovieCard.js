@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Modal from "../CardModal/CardModal";
@@ -20,7 +19,7 @@ export default function CardMovies({ movieObj }) {
         className="me-5 mt-3 text-center"
       >
         <Card.Img variant="top" src={movieObj.poster} />
-        <Card.Body className="cardBody">
+        <Card.Body>
           <Card.Title>{movieObj.title}</Card.Title>
           <Card.Subtitle className="mb-2">{movieObj.genre}</Card.Subtitle>
           <Card.Text>{movieObj.year}</Card.Text>

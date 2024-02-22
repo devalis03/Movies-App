@@ -17,6 +17,7 @@ const moviesList = [
       "Daisy Ridley, Mark Hamill, John Boyega, Adam Driver, Carrie Fisher, Oscar Isaac, Kelly Marie Tran",
     length: 152,
     director: "Rian Johnson",
+    trailer: "https://www.youtube.com/watch?v=Q0CbN8sfihY",
   },
   {
     id: 2,
@@ -30,6 +31,7 @@ const moviesList = [
       "Natalie Portman, Mila Kunis, Vincent Cassel, Winona Ryder, Barbara Hershey, Benjamin Millepied",
     length: 107,
     director: "Darren Aronofsky",
+    trailer: "https://www.youtube.com/watch?v=5jaI1XOB-bs",
   },
   {
     id: 3,
@@ -43,6 +45,7 @@ const moviesList = [
       "Edward Norton, Brad Pitt, Helena Bonham, Jared Leto, Holt McCallany, Meat Loaf",
     length: 139,
     director: "Davind Fincher",
+    trailer: "https://www.youtube.com/watch?v=BdJKm16Co6M",
   },
   {
     id: 4,
@@ -56,6 +59,7 @@ const moviesList = [
       "Al Pacino, Robert De Niro, James Caan, Diane Keaton, John Cazale, Talia Shire",
     length: 202,
     director: "Francis Ford Coppola",
+    trailer: "https://www.youtube.com/watch?v=9O1Iy9od7-A",
   },
   {
     id: 5,
@@ -69,6 +73,7 @@ const moviesList = [
       "Daniel Radcliffe, Emma Watson, Rupert Grint, Alan Rickman, Tom Felton, Robbie Coltrane",
     length: 152,
     director: "Chris Columbus",
+    trailer: "https://www.youtube.com/watch?v=VyHV0BRtdxo",
   },
   {
     id: 6,
@@ -82,6 +87,7 @@ const moviesList = [
       "Al Pacino, Marlon Brando, James Caan, Diane Keaton, Talia Shire, John Cazale, Gianni Russo",
     length: 175,
     director: "Francis Ford Coppola",
+    trailer: "https://www.youtube.com/watch?v=UaVTIH8mujA",
   },
 ];
 
@@ -92,7 +98,6 @@ function App() {
       <div
         style={{
           backgroundImage: "linear-gradient(#8F5CFE, #0C03FD)",
-          //linear-gradient(darkblue, indigo)
         }}
       >
         <Routes>

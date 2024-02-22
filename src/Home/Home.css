@@ -1,0 +1,22 @@
+.home-titles {
+  text-align: center;
+  margin: 10px;
+}
+
+.home-titles h1 {
+  font-weight: 700;
+}
+
+.home-titles h2 {
+  font-weight: 500;
+}
+
+.home-button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-info {
+  margin-top: 100px;
+  background-color: #633ffe !important;
+}

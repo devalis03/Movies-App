@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import Video from "../../assets/videos/StarWars.mp4";
+import ReactPlayer from "react-player";
 
 export default function ModalCard(props) {
   return (
@@ -20,12 +20,35 @@ export default function ModalCard(props) {
             {props.movieObject.title}
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body style={{ border: "none", textAlign: "center" }}>
-          <video width="350" height="250" controls>
-            <source src={Video} type="video/mp4" />
-          </video>
+        <Modal.Body style={{ border: "none" }}>
+          <ReactPlayer
+            url={props.movieObject.trailer}
+            width="100%"
+            height="400px"
+            controls
+            playing
+          />
+          <div style={{ marginTop: "15px", color: "white" }}>
+            <ul>
+              <li>
+                <p>Director: {props.movieObject.director}</p>
+              </li>
+              <li>
+                <p>Actors: {props.movieObject.actors}</p>
+              </li>
+              <li>
+                <p>Length: {props.movieObject.length} minutes</p>
+              </li>
+              <li>
+                <p>Genres: {props.movieObject.genre}</p>
+              </li>
+              <li style={{ listStyle: "none", textAlign: "center" }}>
+                <p>{props.movieObject.plot}</p>
+              </li>
+            </ul>
+          </div>
         </Modal.Body>
-        <Modal.Footer style={{ border: "none" }}>
+        <Modal.Footer style={{ border: "none", justifyContent: "center" }}>
           <Button onClick={props.onHide} style={{ backgroundColor: "#633FFE" }}>
             Close
           </Button>
