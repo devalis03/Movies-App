@@ -1,3 +1,7 @@
+/* .navbar {
+  position: fixed;
+} */
+
 .logo {
   display: flex;
 }
@@ -20,14 +24,15 @@
 }
 
 .nav-item:hover {
-  color: blueviolet !important;
+  color: #633ffe !important;
 }
 
 .nav-button {
   margin-left: 8px;
-  background-color: blueviolet;
+  background-color: #633ffe;
   border: 1px solid black;
   border-radius: 27%;
+  padding: 7px;
 }
 
 .nav-button:hover {

@@ -8,7 +8,7 @@ import "./Navbar.css";
 export default function NavigationBar() {
   return (
     <>
-      <Navbar expand="lg" className="navBar" bg="dark">
+      <Navbar expand="lg" className="navbar" bg="dark">
         <Container>
           <Navbar.Brand href="#home">
             <div className="logo mt-3">
